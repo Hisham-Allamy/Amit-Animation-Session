@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.duck {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    animation-name: duck;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    transition-duration: 0.5s;
+}
+
+@keyframes duck {
+    0% {
+        left: 0px;
+        transform: none;
+    }
+
+    50% {
+        left: 50%;
+        transform: none;
+    }
+    
+    51% {
+        left: 50%;
+        transform: rotateY(180deg);
+        transform: rotateX(180deg);
+    }
+    99% {
+        left: 0px;
+        transform: rotateY(180deg);
+        transform: rotateX(180deg);
+    }
+    
+    100% {
+        left: 0px;
+        transform: rotateY(180deg);
+        transform: rotateX(180deg);
+    }
+}
